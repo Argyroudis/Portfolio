@@ -11,4 +11,21 @@
     width: 100vw;
     position: absolute;
   }
+
+  .imageContainer {
+    position: absolute;
+    top: 30vh;
+    left: 45vh;
+    width: 38rem;
+    height: 20rem;
+    flex-direction: row;
+
+    .cards {
+      height: 20rem;
+      width: 12rem;
+    }
+    .nextCard {
+      margin-left: 1rem;
+    }
+  }
 }
