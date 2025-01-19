@@ -1,4 +1,4 @@
-import './Movies.scss';
+import './style.scss';
 
 export const MOVIES_PATH = '/Movies/';
 

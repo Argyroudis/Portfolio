@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Button } from '@mui/material';
+import { Button, CircularProgress } from '@mui/material';
 import warrior_card from '@/assets/warrior_card.png';
 import weapons_card from '@/assets/weapons_card.png';
 import experience_card from '@/assets/experience_card.png';
-import { MOVIES_PATH } from '../Movies';
-import './MedievalHome.scss';
+import { HOME_PATH } from '../HomeScreen';
+import './style.scss';
 
 export const MEDIEVAL_HOME_PATH = '/MedievalHome/';
 
@@ -21,6 +21,7 @@ const STATE_ORDER = [STATES.START, STATES.WARRIOR, STATES.WEAPONS, STATES.EXPERI
 export function MedievalHome() {
   const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(STATES.START);
+  const [shallShowLoader, setShallShowLoader] = useState(false);
 
   const handleImageClick = (id: string) => {
     // Get the current index and the index of the clicked state
@@ -35,8 +36,9 @@ export function MedievalHome() {
   };
 
   const handleButtonClick = () => {
+    setShallShowLoader(true);
     setTimeout(() => {
-      navigate(MOVIES_PATH);
+      navigate(HOME_PATH);
     }, 500);
   };
 
@@ -67,25 +69,32 @@ export function MedievalHome() {
           alt='a experience card image'
         />
       </div>
-      <div className='buttonContainer'>
-        <Button
-          variant='outlined'
-          sx={{
-            width: '12rem',
-            fontSize: '20px',
-            borderWidth: '2px',
-            color: '#333333',
-            borderColor: '#999999',
-            borderRadius: '0.5',
-            ':hover': {
+      <div className='bottomContainer'>
+        <div className='buttonContainer'>
+          <Button
+            variant='outlined'
+            sx={{
+              width: '12rem',
+              fontSize: '20px',
+              borderWidth: '2px',
+              color: '#333333',
               borderColor: '#999999',
-              backgroundColor: '#f5f5dc',
-            },
-          }}
-          onClick={handleButtonClick}
-        >
-          movies
-        </Button>
+              borderRadius: '0.5',
+              ':hover': {
+                borderColor: '#999999',
+                backgroundColor: '#f5f5dc',
+              },
+            }}
+            onClick={handleButtonClick}
+          >
+            Home Screen
+          </Button>
+        </div>
+        {shallShowLoader && (
+          <div className='progressContainer'>
+            <CircularProgress size='2.5rem' sx={{ color: 'black' }} />
+          </div>
+        )}
       </div>
     </div>
   );

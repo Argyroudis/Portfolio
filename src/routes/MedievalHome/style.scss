@@ -30,8 +30,23 @@
     }
   }
 
-  .buttonContainer {
+  .bottomContainer {
+    display: flex;
     position: absolute;
-    bottom: 4em;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 3em;
+    bottom: 3em;
+
+    .buttonContainer {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .progressContainer {
+      margin-left: calc(50% + 7em);
+    }
   }
 }
