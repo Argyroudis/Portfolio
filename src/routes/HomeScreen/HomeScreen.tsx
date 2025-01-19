@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { MEDIEVAL_HOME_PATH } from '../MedievalHome';
-import { MOVIES_PATH } from '../Movies';
+import { FORMAL_HOME_PATH } from '../FormalHome';
 import background from '@/assets/homeBackground.webp';
 import { HomeButton } from './button';
 import './style.scss';
@@ -14,7 +14,7 @@ export function Home() {
     if (choice === 'medieval') {
       navigate(MEDIEVAL_HOME_PATH);
     } else if (choice === 'formal') {
-      navigate(MOVIES_PATH);
+      navigate(FORMAL_HOME_PATH);
     } else {
       console.log('Error on choosing the portfolio to show');
     }

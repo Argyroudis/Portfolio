@@ -1,27 +1,19 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button, CircularProgress } from '@mui/material';
 import warrior_card from '@/assets/warrior_card.png';
 import weapons_card from '@/assets/weapons_card.png';
 import experience_card from '@/assets/experience_card.png';
 import { HOME_PATH } from '../HomeScreen';
+import { useAppContext } from '@/AppContext';
 import './style.scss';
 
 export const MEDIEVAL_HOME_PATH = '/MedievalHome/';
 
-const STATES = {
-  START: 'start',
-  WARRIOR: 'warrior',
-  WEAPONS: 'weapons',
-  EXPERIENCE: 'experience',
-};
-
-const STATE_ORDER = [STATES.START, STATES.WARRIOR, STATES.WEAPONS, STATES.EXPERIENCE];
-
 export function MedievalHome() {
   const navigate = useNavigate();
-  const [currentStep, setCurrentStep] = useState(STATES.START);
   const [shallShowLoader, setShallShowLoader] = useState(false);
+  const { currentStep, setCurrentStep, STATE_ORDER, STATES } = useAppContext();
 
   const handleImageClick = (id: string) => {
     // Get the current index and the index of the clicked state
@@ -41,10 +33,6 @@ export function MedievalHome() {
       navigate(HOME_PATH);
     }, 500);
   };
-
-  useEffect(() => {
-    console.log('🚀 ~ currentStep:', currentStep);
-  }, [currentStep]);
 
   return (
     <div className='root'>
