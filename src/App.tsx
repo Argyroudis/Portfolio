@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import warrior_card from './assets/warrior_card.png';
 import weapons_card from './assets/weapons_card.png';
 import experience_card from './assets/experience_card.png';
+import { Button } from '@mui/material';
 import './App.scss';
 
 const STATES = {
@@ -26,6 +27,9 @@ function App() {
       setCurrentStep(id);
       console.log(`state changed to ${id}`);
     }
+  };
+  const handleButtonClick = () => {
+    // todo
   };
 
   useEffect(() => {
@@ -54,6 +58,26 @@ function App() {
           className='cards nextCard'
           alt='a experience card image'
         />
+      </div>
+      <div className='buttonContainer'>
+        <Button
+          variant='outlined'
+          sx={{
+            width: '12rem',
+            fontSize: '20px',
+            borderWidth: '2px',
+            color: '#333333',
+            borderColor: '#999999',
+            borderRadius: '0.5',
+            ':hover': {
+              borderColor: '#999999',
+              backgroundColor: '#f5f5dc',
+            },
+          }}
+          onClick={handleButtonClick}
+        >
+          movies
+        </Button>
       </div>
     </div>
   );

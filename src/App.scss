@@ -1,6 +1,9 @@
 .root {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .backgroundContainer {
     background-image: url('./assets/backgroundImageMedieval.webp');
@@ -14,8 +17,6 @@
 
   .imageContainer {
     position: absolute;
-    top: 30vh;
-    left: 45vh;
     width: 38rem;
     height: 20rem;
     flex-direction: row;
@@ -27,5 +28,10 @@
     .nextCard {
       margin-left: 1rem;
     }
+  }
+
+  .buttonContainer {
+    position: absolute;
+    bottom: 4em;
   }
 }
