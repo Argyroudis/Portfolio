@@ -1,22 +1,50 @@
 .root {
   background-color: #24033b;
   width: 100vw;
-  justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-x: hidden;
 
   .Header {
-    position: absolute;
     text-align: center;
-    top: 2rem;
+    padding-top: 2rem;
     color: #e0e0e0;
+
+    .Name {
+      font-size: x-large;
+      font-weight: 800;
+    }
+
+    .jobTitle {
+      color: #ffc107;
+      margin-top: 1rem;
+      font-size: larger;
+      font-weight: 800;
+    }
+
+    .bio {
+      margin-top: 2rem;
+      font-size: medium;
+      font-weight: 600;
+      width: 60vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .ExperienceTitle {
+      margin-top: 2rem;
+    }
   }
 
   .footer {
     display: flex;
-    position: absolute;
     align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
     height: 3em;
-    bottom: 3em;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }

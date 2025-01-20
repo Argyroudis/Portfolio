@@ -10,7 +10,7 @@ import {
   // TimelineDot,
 } from '@mui/lab';
 import { Typography } from '@mui/material';
-import { FaReact, FaGitAlt } from 'react-icons/fa';
+import { FaReact, FaGitAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { HOME_PATH } from '../HomeScreen';
 import { languageToken } from '@/assets/messages';
 import './style.scss';
@@ -29,6 +29,27 @@ export function FormalHome() {
   return (
     <div className='root'>
       <div className='Header'>
+        <div className='Name'>{languageToken.fullName}</div>
+        <div className='jobTitle'>{languageToken.jobTitle}</div>
+        <IconButton
+          component='a'
+          href='https://www.linkedin.com/in/stavros-argyroudis'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <FaLinkedin color='#0077B5' size={40} />
+        </IconButton>
+        <IconButton
+          component='a'
+          href='https://github.com/Argyroudis'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <FaGithub color='#B5B5B5' size={40} />
+        </IconButton>
+        <div className='bio'>{languageToken.bio}</div>
+        <div className='ExperienceTitle'>{languageToken.ProfessionalExperience}</div>
+
         <Timeline position='alternate'>
           <TimelineItem>
             <TimelineOppositeContent>
@@ -40,7 +61,7 @@ export function FormalHome() {
                   fontWeight: 800,
                 }}
               >
-                {languageToken.fullName}
+                {languageToken.LastJob}
               </Typography>
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -59,15 +80,22 @@ export function FormalHome() {
                   fontWeight: 800,
                 }}
               >
-                {languageToken.jobTitle}
+                {languageToken.LastJobDescription}
               </Typography>
             </TimelineContent>
           </TimelineItem>
 
           <TimelineItem>
             <TimelineOppositeContent>
-              <Typography variant='body2' color='#e0e0e0'>
-                {languageToken.what}
+              <Typography
+                variant='body2'
+                color='#e0e0e0'
+                sx={{
+                  fontSize: 'x-large',
+                  fontWeight: 800,
+                }}
+              >
+                {languageToken.LastJob}
               </Typography>
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -79,14 +107,14 @@ export function FormalHome() {
             <TimelineContent>
               <Typography
                 variant='h6'
-                component='span'
                 color='#ffc107'
+                component='span'
                 sx={{
-                  fontSize: 'medium',
-                  fontWeight: 600,
+                  fontSize: 'larger',
+                  fontWeight: 800,
                 }}
               >
-                {languageToken.bio}
+                {languageToken.LastJobDescription}
               </Typography>
             </TimelineContent>
           </TimelineItem>
