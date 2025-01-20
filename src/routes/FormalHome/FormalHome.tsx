@@ -29,11 +29,7 @@ export function FormalHome() {
   return (
     <div className='root'>
       <div className='Header'>
-        {/* <div className='Name'>{languageToken.fullName}</div>
-        <div className='jobTitle'>{languageToken.jobTitle}</div>
-        <div className='bio'>{languageToken.bio}</div> */}
         <Timeline position='alternate'>
-          {/* Timeline Item 1 */}
           <TimelineItem>
             <TimelineOppositeContent>
               <Typography
@@ -68,7 +64,6 @@ export function FormalHome() {
             </TimelineContent>
           </TimelineItem>
 
-          {/* Timeline Item 2 */}
           <TimelineItem>
             <TimelineOppositeContent>
               <Typography variant='body2' color='#e0e0e0'>
@@ -98,27 +93,25 @@ export function FormalHome() {
         </Timeline>
       </div>
 
-      <div className='bottomContainer'>
-        <div className='buttonContainer'>
-          <Button
-            variant='outlined'
-            sx={{
-              width: '12rem',
-              fontSize: '20px',
-              borderWidth: '2px',
-              color: '#333333',
+      <div className='footer'>
+        <Button
+          variant='outlined'
+          sx={{
+            width: '12rem',
+            fontSize: '20px',
+            borderWidth: '2px',
+            color: '#333333',
+            borderColor: '#999999',
+            borderRadius: '0.5',
+            ':hover': {
               borderColor: '#999999',
-              borderRadius: '0.5',
-              ':hover': {
-                borderColor: '#999999',
-                backgroundColor: '#f5f5dc',
-              },
-            }}
-            onClick={handleButtonClick}
-          >
-            Home Screen
-          </Button>
-        </div>
+              backgroundColor: '#f5f5dc',
+            },
+          }}
+          onClick={handleButtonClick}
+        >
+          Home Screen
+        </Button>
       </div>
     </div>
   );
