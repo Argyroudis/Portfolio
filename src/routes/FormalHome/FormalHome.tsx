@@ -63,6 +63,16 @@ export function FormalHome() {
               >
                 {languageToken.LastJob}
               </Typography>
+              <Typography
+                variant='body2'
+                color='#ffc107'
+                sx={{
+                  fontSize: 'large',
+                  fontWeight: 600,
+                }}
+              >
+                {languageToken.LastJobDuration}
+              </Typography>
             </TimelineOppositeContent>
             <TimelineSeparator>
               <IconButton>
