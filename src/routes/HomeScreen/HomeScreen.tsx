@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { MEDIEVAL_HOME_PATH } from '../MedievalHome';
 import { FORMAL_HOME_PATH } from '../FormalHome';
-import background from '@/assets/homeBackground.webp';
+import background from '@/assets/images/homeBackground.webp';
 import { HomeButton } from './button';
 import './style.scss';
 
