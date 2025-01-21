@@ -44,10 +44,12 @@ export function FormalHome() {
         <TimelineOfJobs />
 
         <div className='SkillsTitle'>{languageToken.skills.SkillsTitle}</div>
-        <SkillsGrid />
+        <div className='SkillsGrid'>
+          <SkillsGrid />
+        </div>
       </div>
 
-      {/* <div className='footer'>
+      <div className='footer'>
         <Button
           variant='outlined'
           sx={{
@@ -66,7 +68,7 @@ export function FormalHome() {
         >
           Home Screen
         </Button>
-      </div> */}
+      </div>
     </div>
   );
 }
