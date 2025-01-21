@@ -47,8 +47,8 @@ export function FormalHome() {
   return (
     <div className='root'>
       <div className='Header'>
-        <div className='Name'>{languageToken.fullName}</div>
-        <div className='jobTitle'>{languageToken.jobTitle}</div>
+        <div className='Name'>{languageToken.personalInfo.fullName}</div>
+        <div className='jobTitle'>{languageToken.personalInfo.jobTitle}</div>
         <IconButton
           component='a'
           href='https://www.linkedin.com/in/stavros-argyroudis'
@@ -65,8 +65,8 @@ export function FormalHome() {
         >
           <FaGithub color='#B5B5B5' size={40} />
         </IconButton>
-        <div className='bio'>{languageToken.bio}</div>
-        <div className='ExperienceTitle'>{languageToken.ProfessionalExperience}</div>
+        <div className='bio'>{languageToken.personalInfo.bio}</div>
+        <div className='ExperienceTitle'>{languageToken.Jobs.ProfessionalExperience}</div>
 
         <Timeline position='alternate'>
           <TimelineItem>
@@ -79,7 +79,7 @@ export function FormalHome() {
                   fontWeight: 800,
                 }}
               >
-                {languageToken.LastJob}
+                {languageToken.Jobs.LastJob}
               </Typography>
               <Typography
                 variant='body2'
@@ -89,7 +89,7 @@ export function FormalHome() {
                   fontWeight: 600,
                 }}
               >
-                {languageToken.LastJobDuration}
+                {languageToken.Jobs.LastJobDuration}
               </Typography>
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -108,7 +108,7 @@ export function FormalHome() {
                   fontWeight: 800,
                 }}
               >
-                {languageToken.LastJobDescription}
+                {languageToken.Jobs.LastJobDescription}
               </Typography>
             </TimelineContent>
           </TimelineItem>
@@ -123,7 +123,7 @@ export function FormalHome() {
                   fontWeight: 800,
                 }}
               >
-                {languageToken.PreviousJob}
+                {languageToken.Jobs.PreviousJob}
               </Typography>
               <Typography
                 variant='body2'
@@ -133,7 +133,7 @@ export function FormalHome() {
                   fontWeight: 600,
                 }}
               >
-                {languageToken.PreviousDuration}
+                {languageToken.Jobs.PreviousDuration}
               </Typography>
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -152,7 +152,7 @@ export function FormalHome() {
                   fontWeight: 800,
                 }}
               >
-                • {languageToken.PreviousDescription.part1}
+                • {languageToken.Jobs.PreviousDescription.part1}
               </Typography>
               <Typography
                 variant='h6'
@@ -163,7 +163,7 @@ export function FormalHome() {
                   fontWeight: 800,
                 }}
               >
-                • {languageToken.PreviousDescription.part2}
+                • {languageToken.Jobs.PreviousDescription.part2}
               </Typography>
               <Typography
                 variant='h6'
@@ -174,13 +174,13 @@ export function FormalHome() {
                   fontWeight: 800,
                 }}
               >
-                • {languageToken.PreviousDescription.part3}
+                • {languageToken.Jobs.PreviousDescription.part3}
               </Typography>
             </TimelineContent>
           </TimelineItem>
         </Timeline>
 
-        <div className='SkillsTitle'>{languageToken.SkillsTitle}</div>
+        <div className='SkillsTitle'>{languageToken.skills.SkillsTitle}</div>
 
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <FaReact color='#61DBFB' size={40} />

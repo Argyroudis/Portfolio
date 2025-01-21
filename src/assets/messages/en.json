@@ -1,22 +1,40 @@
 {
-  "fullName": "Stavros Argyroudis",
-  "jobTitle": "Frontend Developer",
-  "bio": "I am a passionate and skilled frontend developer with over two years of professional experience. Currently, I specialize in creating seamless, high-performance TV streaming applications using React.js. My role focuses on designing intuitive user interfaces, optimizing media playback features, and ensuring scalability and accessibility. I continuously stay up-to-date with the latest industry trends and technologies, including performance optimization, responsive design, and modern JavaScript frameworks, to deliver exceptional user experiences.",
-  "what": "what I do",
-  "WorkOut": "Working Out",
-  "WorkOutDescription": "Regular exercise keeps me ...",
-  "Travel": "Travelling",
-  "TravelDescription": "Exploring new places...",
-  "ProfessionalExperience": "Professional Experience",
-  "LastJob": "Oregan Networks Ltd via Arx.net",
-  "LastJobDescription": "Develop and maintain high-performing TV streaming applications tailored to client needs using React. Collaborate closely with the team to design and implement advanced media player features, including seamless playback functionality. Optimize application performance to  enhance user experience, focusing on reliability and scalability. Troubleshoot and resolve issues related to media playback and application performance.",
-  "LastJobDuration": "January 2023 - Today",
-  "PreviousJob": "Intern - Zeusplay",
-  "PreviousDescription": {
-    "part1": "Gained hands-on experience with Vue.js (Vue 2), enhancing my understanding of modern front-end frameworks and development workflows.",
-    "part2": "Assisted in testing and quality assurance for newly developed features and games, ensuring a smooth user experience and identifying potential issues.",
-    "part3": "Contributed to the maintenance and improvement of the company's WordPress-based webpage, supporting content updates and troubleshooting."
+  "personalInfo": {
+    "fullName": "Stavros Argyroudis",
+    "jobTitle": "Frontend Developer",
+    "bio": "I am a passionate and skilled frontend developer with over two years of professional experience. Currently, I specialize in creating seamless, high-performance TV streaming applications using React.js. My role focuses on designing intuitive user interfaces, optimizing media playback features, and ensuring scalability and accessibility. I continuously stay up-to-date with the latest industry trends and technologies, including performance optimization, responsive design, and modern JavaScript frameworks, to deliver exceptional user experiences."
   },
-  "PreviousDuration": "4 Months",
-  "SkillsTitle": "skills and technologies"
+  "Jobs": {
+    "ProfessionalExperience": "Professional Experience",
+    "LastJob": "Oregan Networks Ltd via Arx.net",
+    "LastJobDescription": "Develop and maintain high-performing TV streaming applications tailored to client needs using React. Collaborate closely with the team to design and implement advanced media player features, including seamless playback functionality. Optimize application performance to  enhance user experience, focusing on reliability and scalability. Troubleshoot and resolve issues related to media playback and application performance.",
+    "LastJobDuration": "January 2023 - Today",
+    "PreviousJob": "Intern - Zeusplay",
+    "PreviousDescription": {
+      "part1": "Gained hands-on experience with Vue.js (Vue 2), enhancing my understanding of modern front-end frameworks and development workflows.",
+      "part2": "Assisted in testing and quality assurance for newly developed features and games, ensuring a smooth user experience and identifying potential issues.",
+      "part3": "Contributed to the maintenance and improvement of the company's WordPress-based webpage, supporting content updates and troubleshooting."
+    },
+    "PreviousDuration": "4 Months"
+  },
+  "skills": {
+    "SkillsTitle": "skills and technologies",
+    "technologies": {
+      "react": "React",
+      "redux": "Redux",
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "git": "Git",
+      "html": "HTML",
+      "css": "CSS",
+      "scss": "SCSS",
+      "preact": "Preact",
+      "reactRouter": "React Router",
+      "github": "GitHub",
+      "bitbucket": "Bitbucket",
+      "jira": "Jira",
+      "confluence": "Confluence",
+      "linkedin": "LinkedIn"
+    }
+  }
 }
