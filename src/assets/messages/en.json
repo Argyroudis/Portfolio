@@ -7,9 +7,16 @@
   "WorkOutDescription": "Regular exercise keeps me ...",
   "Travel": "Travelling",
   "TravelDescription": "Exploring new places...",
-  "WorkExperience": "Work Experience",
+  "ProfessionalExperience": "Professional Experience",
   "LastJob": "Oregan Networks Ltd via Arx.net",
   "LastJobDescription": "Develop and maintain high-performing TV streaming applications tailored to client needs using React. Collaborate closely with the team to design and implement advanced media player features, including seamless playback functionality. Optimize application performance to  enhance user experience, focusing on reliability and scalability. Troubleshoot and resolve issues related to media playback and application performance.",
   "LastJobDuration": "January 2023 - Today",
-  "ProfessionalExperience": "Professional Experience"
+  "PreviousJob": "Intern - Zeusplay",
+  "PreviousDescription": {
+    "part1": "Gained hands-on experience with Vue.js (Vue 2), enhancing my understanding of modern front-end frameworks and development workflows.",
+    "part2": "Assisted in testing and quality assurance for newly developed features and games, ensuring a smooth user experience and identifying potential issues.",
+    "part3": "Contributed to the maintenance and improvement of the company's WordPress-based webpage, supporting content updates and troubleshooting."
+  },
+  "PreviousDuration": "4 Months",
+  "SkillsTitle": "skills and technologies"
 }
