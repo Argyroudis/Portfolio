@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { Button, IconButton } from '@mui/material';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaUniversity } from 'react-icons/fa';
 import { HOME_PATH } from '../HomeScreen';
 import { TimelineOfJobs } from '@/components/TimelineOfJobs';
 import { SkillsGrid } from '@/components/SkillsGrid';
@@ -46,6 +46,16 @@ export function FormalHome() {
         <div className='SkillsTitle'>{languageToken.skills.SkillsTitle}</div>
         <div className='SkillsGrid'>
           <SkillsGrid />
+        </div>
+        <div className='EducationSection'>
+          <div className='EducationTitle'>{languageToken.Education.Education}</div>
+          <div className='EducationDescription'>
+            <FaUniversity color='#FFD700' size={80} />
+            <div className='EducationText'>
+              <div className='EducationSubText'>{languageToken.Education.University}</div>
+              <div className='EducationSubText'>{languageToken.Education.Department}</div>
+            </div>
+          </div>
         </div>
       </div>
 

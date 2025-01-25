@@ -36,5 +36,10 @@
       "confluence": "Confluence",
       "linkedin": "LinkedIn"
     }
+  },
+  "Education": {
+    "Education": "Education",
+    "University": "University of Macedonia",
+    "Department": "Bachelor's Degree in Applied Informatics"
   }
 }
