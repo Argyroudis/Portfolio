@@ -41,5 +41,20 @@
     "Education": "Education",
     "University": "University of Macedonia",
     "Department": "Bachelor's Degree in Applied Informatics"
+  },
+  "Hobbies": {
+    "Hobbies": "Hobbies",
+    "Traveling": {
+      "Title": "Traveling",
+      "Description": "Explored multiple countries, embracing diverse cultures and experiences."
+    },
+    "Fitness": {
+      "Title": "Fitness",
+      "Description": "Passionate about weightlifting and maintaining an active, healthy lifestyle."
+    },
+    "MoviesAndTheater": {
+      "Title": "Movies & Theater",
+      "Description": "Enjoys exploring storytelling through cinema and attending live theater performances."
+    }
   }
 }
